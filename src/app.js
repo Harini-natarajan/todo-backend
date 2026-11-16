@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
-    res.send("Todo API is running");
+    res.send("Todo API is running - Version 2");
 });
 
 app.use("/api/todos", todoRoutes);
