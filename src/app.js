@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import todoRoutes from "./routes/todoRoutes.js";
+import aiRoutes from "./routes/aiRoutes.js";
 
 const app = express();
 
@@ -12,5 +13,6 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api/todos", todoRoutes);
+app.use("/api/ai", aiRoutes);
 
 export default app;
